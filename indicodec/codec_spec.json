@@ -1,0 +1,29 @@
+{
+  "name": "IndiCodec v1.0",
+  "ckpt": "model.safetensors",
+  "md5_safetensors": "7d9f2d7d04893de3706fcefcd33450ce",
+  "md5": "986a7c393c2168a00c56dfb96751a0d4",
+  "w2v_bert": {"source": "facebook/w2v-bert-2.0", "revision": "da985ba0987f70aaeb84a80f2851cfac8c697a7b", "layers": 16, "in_file": true},
+  "sample_rate_encoders": 16000,
+  "sample_rate_out": 24000,
+  "bitrate_bps": 1092,
+  "content": {
+    "levels": [3, 3, 3, 3, 3, 3, 3, 3],
+    "hz": 25,
+    "n_ids": 6561,
+    "bps": 317
+  },
+  "acoustic": {
+    "levels": [6, 6, 6, 6, 6, 6],
+    "hz": 50,
+    "n_ids": 46656,
+    "bps": 775
+  },
+  "hop_16": 320,
+  "hop_24": 480,
+  "n_fft": 1920,
+  "tail_frames": 2,
+  "level_db": null,
+  "decoder": "vocos_istft_12",
+  "amp_cuda": "bf16"
+}
