@@ -2,6 +2,8 @@
 
 [Audio samples](https://codeprakhar25.github.io/IndiCodec/) · [Weights on Hugging Face](https://huggingface.co/prakharkhatri/IndiCodec)
 
+![IndiCodec architecture: w2v-BERT 2.0 and a semantic encoder feed an FSQ 3^8 content stream at 25 Hz; a CNN encoder minus the content feeds an FSQ 6^6 acoustic stream at 50 Hz; a Vocos decoder with an ISTFT head outputs 24 kHz speech](assets/architecture.png)
+
 A 1.09 kbps neural speech codec for building speech language models and TTS. It turns speech into two streams of
 integer tokens and decodes them back to 24 kHz audio.
 
