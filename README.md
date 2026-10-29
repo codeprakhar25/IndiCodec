@@ -51,6 +51,17 @@ PESQ-WB (higher is better):
 | Seed-TTS eval (English) | 1.99 | **2.07** | 1.82 | 1.81 |
 | FLEURS, 10 Indian languages | **1.90** | 1.84 | 1.69 | 1.69 |
 
+Intelligibility and voice (higher is better):
+
+| | IndiCodec | Mimi | SNAC | NeuCodec |
+|---|---|---|---|---|
+| ESTOI, CMU-Arctic (English) | **0.855** | 0.848 | 0.835 | 0.824 |
+| ESTOI, Seed-TTS eval (English) | 0.786 | **0.794** | 0.762 | 0.758 |
+| ESTOI, FLEURS, 10 Indian languages | **0.640** | 0.613 | 0.595 | 0.591 |
+| Speaker similarity, Seed-TTS eval (English) | **0.964** | **0.964** | 0.946 | 0.957 |
+
+Speaker similarity is the cosine between WavLM-base-plus-sv x-vectors of each decode and its own original.
+
 Words after a round trip (lower is better):
 
 | | IndiCodec | Mimi | SNAC | NeuCodec |
